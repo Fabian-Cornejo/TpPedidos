@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Ticket y Pago</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Logo.jpg" alt="PedidosAhora Logo" id="logo">
+        <h1>PedidosAhora</h1>
+    </header>
+
+    <div id="ticket" class="oculto">
+        <h2>Ticket de Pedido</h2>
+        <p><strong>Pedido N°:</strong> <span id="numeroPedido"></span></p>
+        <p><strong>Valor Total:</strong> $<span id="valorTotal"></span></p>
+    </div>
+
+    <div id="mensajeMetodoPago" class="oculto">
+        <h3 id="mensajeMetodo"></h3>
+    </div>
+
+    <div id="mensajeResultadoPago" class="oculto">
+        <h3 id="mensajeResultado"></h3>
+    </div>
+
+    <button onclick="generarTicket()">Generar Ticket</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
